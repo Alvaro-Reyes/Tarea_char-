@@ -126,7 +126,7 @@ void Juego(char** columnaA,char** columnaB,int palabrasA,int palabrasB){
 	char resp='s';
 	int combinaciones[80];
 	while(resp=='s'||resp=='S'&&contcomb<40){
-		
+		cont++;
 		cout<<"Palabra de la columna A: ";
 		cin>>matchA;
 		while(matchA<1||matchA>palabrasA){
@@ -146,7 +146,6 @@ void Juego(char** columnaA,char** columnaB,int palabrasA,int palabrasB){
 		cout<<"Desea ingresar otra combinacion?(S/N): ";
 		cin>>resp;
 		contcomb+=2;
-		cont++;
 	}
 	char** matcharray=new char*[cont];
 	int contadorwhile=0;
